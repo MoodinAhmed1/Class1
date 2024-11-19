@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TimeTable</title>
+	<style>
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.time-table-container{
+			display:flex; 
+			flex-direction: column;
+			padding: 100px 200px;
+			justify-content: center;
+		}
+		.time-table-container h1{
+			font-size: 40px;
+		}
+		table{ 
+			width: 100%;
+			border-collapse:collapse; 
+		}
+		th, td{
+			border: 1px solid #ddd; padding: 8px;
+	 	}
+		th{ background-color: lightblue; }
+		tr:hover{
+			background-color: rgb(226, 226, 226);
+			transition: 0.3s;
+		}
+		.course{
+			font-size: large;
+			font-weight: bold;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="time-table-container">
+		<h1>My TimeTable</h1>
+		<table>
+			<tr class="headers">
+				<th>Day/course</th>
+				<th>monday</th>
+				<th>tuesday</th>
+				<th>wendsday</th>
+				<th>thursday</th>
+				<th>friday</th>
+				<th>saturday</th>
+			</tr>
+	
+			<tr><td class="course">Automata</td> 
+				<td>2:30 - 5:30</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr><td class="course">WebDevelopment</td>
+				<td></td> 
+				<td>2:30 - 4:30<br>7:30 - 10:30</td> 
+				<td></td> 
+				<td></td> 
+				<td></td>
+				<td></td>
+			</tr>
+			<tr><td class="course">Fundamentals of java</td>
+				<td></td>
+				<td>4:30 - 6:30</td>
+				<td>7:30 - 10:30</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr><td class="course">Operating System</td>
+				<td></td>
+				<td></td>
+				<td>2:30 - 4:30</td>
+				<td>2:30 - 4:30</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr ><td class="course">Software Engeeneering</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>4:30 - 6:30</td>
+				<td>2:30 - 5:30</td>
+				<td></td>
+			</tr>
+			<tr ><td class="course">DataStructure and algorithm</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>7:30 - 10:30</td>
+				<td>2:30 - 5:30</td>
+			</tr>
+		</table>
+	</div>
+	
+</body>
+</html>

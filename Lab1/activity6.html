@@ -1,0 +1,319 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TimeTable + course Outline</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.time-table-container{
+			display:flex; 
+			flex-direction: column;
+			padding: 25px 200px;
+			justify-content: center;
+		}
+		.time-table-container h1{
+			font-size: 40px;
+		}
+		table{ 
+			width: 100%;
+			border-collapse:collapse;
+		}
+		th, td{
+			border: 1px solid #ddd; padding: 8px;
+	 	}
+		th{ background-color: lightblue; }
+		tr:hover{
+			background-color: rgb(226, 226, 226);
+			transition: 0.3s;
+		}
+		.time-table-container .course{
+			font-size: large;
+			font-weight: bold;
+			padding: 10px;
+		}
+
+		.course-outline-div{
+			display:flex; 
+			flex-direction: column;
+			padding: 25px 200px;
+			justify-content: center;
+		}
+		.course-outline-div h1{
+			font-size: 40px;
+		}
+		.course-outline-grid{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
+		}
+		.course-outline-grid .course{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: top;
+			border: 1px solid gray;
+			padding: 3px;
+		}
+		.course-outline-grid .course:hover{
+			background-color: rgb(201, 201, 201);
+			transform: scale(1.02);
+			transition: 0.3s;
+		}
+		.course-title {
+			width: 100%;
+		}
+
+		.course ol li ul {
+			padding-left: 10px;
+			margin-bottom: 15px;
+		}
+		.course ol li ul li {
+			width: 90%;
+			line-height: 22px;
+		}
+		.course ol{
+			margin: 0;
+		}
+		.course ol li{
+			margin-bottom: 5px;
+		}
+		.course > h2 {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="time-table-container">
+		<h1>My TimeTable</h1>
+		<table>
+			<tr class="headers">
+				<th>Day/course</th>
+				<th>monday</th>
+				<th>tuesday</th>
+				<th>wendsday</th>
+				<th>thursday</th>
+				<th>friday</th>
+				<th>saturday</th>
+			</tr>
+	
+			<tr><td class="course">Automata</td> 
+				<td>2:30 - 5:30</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr><td class="course">WebDevelopment</td>
+				<td></td> 
+				<td>2:30 - 4:30<br>7:30 - 10:30</td> 
+				<td></td> 
+				<td></td> 
+				<td></td>
+				<td></td>
+			</tr>
+			<tr><td class="course">Fundamentals of java</td>
+				<td></td>
+				<td>4:30 - 6:30</td>
+				<td>7:30 - 10:30</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr><td class="course">Operating System</td>
+				<td></td>
+				<td></td>
+				<td>2:30 - 4:30</td>
+				<td>2:30 - 4:30</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr ><td class="course">Software Engeeneering</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>4:30 - 6:30</td>
+				<td>2:30 - 5:30</td>
+				<td></td>
+			</tr>
+			<tr ><td class="course">DataStructure and algorithm</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>7:30 - 10:30</td>
+				<td>2:30 - 5:30</td>
+			</tr>
+		</table>
+	</div>
+	<div class="course-outline-div">
+		<h1>Course outline</h1>
+		<div class="course-outline-grid">
+			<div class="course">
+				<h2>Automata</h2>
+				<ol class="course-title">
+					<li> Introduction
+						<ul>
+							<li>History of Automata</li>
+							<li>father of automata</li>
+						</ul>
+					</li>
+					<li>Types of automata
+						<ul>
+							<li>Fsm</li>
+							<li>...</li>
+							<li>...</li>
+							<li>...</li>
+						</ul>
+					</li>
+					<li>Bla bla bla
+						<ul>
+							<li>Bla bla bla</li>
+							<li>Bla bla bla</li>
+							<li>Bla bla bla</li>
+						</ul>
+					</li>
+				</ol>
+			</div>
+			<div class="course">
+				<h2>Web Development</h2>
+				<ol>
+				<li> Introduction
+					<ul>
+						<li>History of WebDevelopment</li>
+						<li>father of WebDevelopment</li>
+					</ul>
+				</li>
+				<li>Types of Web Development
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>PHP</li>
+					</ul>
+				</li>
+				<li>Bla bla bla
+					<ul>
+						<li>Bla bla bla</li>
+						<li>Bla bla bla</li>
+						<li>Bla bla bla</li>
+					</ul>
+				</li>
+				</ol>
+			</div>
+			<div class="course">
+				<h2>Software Engeeneering</h2>
+				<ol>
+				<li> Introduction
+					<ul>
+						<li>History of WebDevelopment</li>
+						<li>father of WebDevelopment</li>
+					</ul>
+				</li>
+				<li>Types of WebDevelopment
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>PHP</li>
+					</ul>
+				</li>
+				<li>Bla bla bla
+					<ul>
+						<li>Bla bla bla</li>
+						<li>Bla bla bla</li>
+						<li>Bla bla bla</li>
+					</ul>
+				</li>
+				</ol>
+			</div>
+			<div class="course">
+				<h2>Fundamentals of java</h2>
+				<ol>
+				<li> Introduction
+					<ul>
+						<li>History of WebDevelopment</li>
+						<li>father of WebDevelopment</li>
+					</ul>
+				</li>
+				<li>Types of WebDevelopment
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>PHP</li>
+					</ul>
+				</li>
+				<li>Bla bla bla
+					<ul>
+						<li>Bla bla bla</li>
+						<li>Bla bla bla</li>
+						<li>Bla bla bla</li>
+					</ul>
+				</li>
+				</ol>
+			</div>
+			<div class="course">
+				<h2>Operating System</h2>
+				<ol>
+				<li> Introduction
+					<ul>
+						<li>History of WebDevelopment</li>
+						<li>father of WebDevelopment</li>
+					</ul>
+				</li>
+				<li>Types of WebDevelopment
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>PHP</li>
+					</ul>
+				</li>
+				<li>Bla bla bla
+					<ul>
+						<li>Bla bla bla</li>
+						<li>Bla bla bla</li>
+						<li>Bla bla bla</li>
+					</ul>
+				</li>
+				</ol>
+			</div>
+			<div class="course">
+				<h2>Data Structure and Algorithm</h2>
+				<ol>
+				<li> Introduction
+					<ul>
+						<li>History of WebDevelopment</li>
+						<li>father of WebDevelopment</li>
+					</ul>
+				</li>
+				<li>Types of WebDevelopment
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>PHP</li>
+					</ul>
+				</li>
+				<li>Bla bla bla
+					<ul>
+						<li>Bla bla bla</li>
+						<li>Bla bla bla</li>
+						<li>Bla bla bla</li>
+					</ul>
+				</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
